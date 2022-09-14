@@ -20,6 +20,7 @@ const Profile = () => {
               Dashboard
             </NavLink>
           </li>
+          
           <li>
             {/* <Link to="/profile/download">Download</Link> */}
             <NavLink
@@ -33,6 +34,8 @@ const Profile = () => {
           </li>
         </ul>
       </aside>
+
+      {/* can use Outlet component and transfer this routes to between profile components as child */}
       <Routes>
         <Route path="dashboard" element={<Dashboard />} />
         <Route path="download" element={<Download />} />
